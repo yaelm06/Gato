@@ -1,0 +1,102 @@
+<!--
+@name Juego Gato
+@file index.html
+@copyright © 2025 Equipo 6, Matemáticas Discretas.
+@authors Frida Alejandra Mendoza Martínez, Marvin Martínez Ramón, Yael Morales Medina
+@date 02/12/2025
+@description Archivo que contiene la estructura del programa.
+@credits "COMO HACER UN TRIQUI [TIC TAC TOE] CON HTML5, CSS3 Y JAVASCRIPT SIN FRAMEWORKS [VANILLA]", 
+Porto Armenia, YouTube, https://www.youtube.com/watch?v=gMrWT7zW6Wo, publicado el 2 de Octubre del 2021
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 870px)">
+    <title>Juego Gato</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="header_fig">
+            <img class="header__fig-icon" src="./images/game.png" alt="Game Icon">
+        </figure>
+        <h1 class="header__h1">Gato ó Tic-Tac-Toe</h1>
+    </header>
+    <section class="section">
+        <aside class="section__aside">
+            <h2 class="section__aside-h2" id="player1_title">Jugador 1</h2>
+            <picture class="section__aside-picture">
+                <img class="emoji" src="./images/init.png" alt="Inicial" id="img_player1">
+            </picture>
+            <div class="section__div">
+                <p class="section__div-p">Puntuación:</p>
+                <p class="section__div-number-score" id="score_1">0</p>
+            </div>
+        </aside>
+
+        <main class="section__main">
+            <table class="section__main-table">
+                <tr>
+                    <td id="c1_1"><button class="button_sel button_select" type="button" id="button_active1"></button></td>
+                    <td id="c1_2"><button class="button_sel button_select" type="button" id="button_active2"></button></td>
+                    <td id="c1_3"><button class="button_sel button_select" type="button" id="button_active3"></button></td>
+                </tr>
+                <tr>
+                    <td id="c2_1"><button class="button_sel button_select" type="button" id="button_active4"></button></td>
+                    <td id="c2_2"><button class="button_sel button_select" type="button" id="button_active5"></button></td>
+                    <td id="c2_3"><button class="button_sel button_select" type="button" id="button_active6"></button></td>
+                </tr>
+                <tr>
+                    <td id="c3_1"><button class="button_sel button_select" type="button" id="button_active7"></button></td>
+                    <td id="c3_2"><button class="button_sel button_select" type="button" id="button_active8"></button></td>
+                    <td id="c3_3"><button class="button_sel button_select" type="button" id="button_active9"></button></td>
+                </tr>
+            </table>
+        </main>
+
+        <div class="section__div-mobile">
+            <div class="player-mobile">
+                <p class="player-mobile-p">Jugador 1</p>
+                <p id="score_1m">0</p>
+            </div>
+            <div class="player-mobile">
+                <p class="player-mobile-p">Jugador 2</p>
+                <p id="score_2m">0</p>
+            </div>
+        </div>
+
+        <aside class="section__aside">
+            <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
+            <picture class="section__aside-picture">
+                <img class="emoji" src="./images/init.png" alt="Inicial" id="img_player2">
+            </picture>
+            <div class="section__div">
+                <p class="section__div-p">Puntuación:</p>
+                <p class="section__div-number-score" id="score_2">0</p>
+            </div>
+        </aside>
+    </section>
+
+    <div class="modal-container">
+        <div class = "modal modal-close">
+            <img src="./images/win.png" alt="Gana Inicio de partida">
+            <div class="modal-text">
+                <h1 id="playerInit"></h1>
+            </div>
+            <button class="button_start start_button" type="button" id="start">Comenzar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <button type="button" class="button_start" id="ranGame">Sortear Partida</button>
+        <button type="button" onclick="nextGame()" class="button_start" id="nextButton" disabled>Siguiente Juego</button>
+        <button type="button" onclick="resetButton()" class="button_start" id="cleanButton" disabled>Reiniciar</button>
+        <button type="button" class="button_start" id="btnMode" style="margin-left: 20px;">Modo: 2 Jugadores</button>
+    </footer>
+
+    <script type="module" src="./utils/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*
+@name Juego Gato
+@file desktop.css
+@copyright © 2025 Equipo 6, Matemáticas Discretas.
+@authors Frida Alejandra Mendoza Martínez, Marvin Martínez Ramón, Yael Morales Medina
+@date 02/12/2025
+@description Archivo que contiene el diseño.
+@credits "COMO HACER UN TRIQUI [TIC TAC TOE] CON HTML5, CSS3 Y JAVASCRIPT SIN FRAMEWORKS [VANILLA]", 
+Porto Armenia, YouTube, https://www.youtube.com/watch?v=gMrWT7zW6Wo, publicado el 2 de Octubre del 2021
+*/
+.header , .footer {
+    height: 100px;
+}
+
+.section{
+    height: calc(100vh - 200px);
+}

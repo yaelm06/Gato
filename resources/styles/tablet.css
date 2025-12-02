@@ -1,0 +1,83 @@
+/*
+@name Juego Gato
+@filen tablet.css
+@copyright © 2025 Equipo 6, Matemáticas Discretas.
+@authors Frida Alejandra Mendoza Martínez, Marvin Martínez Ramón, Yael Morales Medina
+@date 02/12/2025
+@description Archivo que contiene el diseño.
+@credits "COMO HACER UN TRIQUI [TIC TAC TOE] CON HTML5, CSS3 Y JAVASCRIPT SIN FRAMEWORKS [VANILLA]", 
+Porto Armenia, YouTube, https://www.youtube.com/watch?v=gMrWT7zW6Wo, publicado el 2 de Octubre del 2021
+*/
+.header{
+    height: 50px;
+}
+
+.header__h1{
+    font-size: 4rem;
+}
+
+.section{
+    flex-direction: row;
+    height: calc(100vh - 100px);
+}
+
+.section__div-mobile {
+    display: none;
+}
+
+.section__aside{
+    width: 20%;
+    height: 100%;
+    border: 6px solid white;
+    border-radius: 20px;
+    background: linear-gradient(#acfc69, #045c5c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section__aside-h2{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.section__aside-picture{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.emoji {
+    width: 80%;
+}
+
+.section__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.section__div-p{
+    font-size: 1.5rem;
+}
+
+.section__div-number-score{
+    font-size: 4rem;
+}
+
+.section__main{
+    width: 50%;
+    height: 100%;
+    border: 6px solid white;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.footer{
+    height: 50px;
+}
